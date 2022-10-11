@@ -1,0 +1,29 @@
+<div class="page-wrapper">
+  {% include directory ~ '/partials/header.twig' %}
+  <section class="slider-section">
+    <div class="row m-0">
+      {% if page.slider %}
+        {{ page.slider }}
+      {% endif %}
+    </div>
+  </section>
+  <section class="mission-section">
+    {% if page.latest_updates %}
+      {{ page.latest_updates }}
+    {% endif %}
+  </section>
+  <section class="digital-section">
+    {% if page.digital_platform %}
+      {{ page.digital_platform }}
+    {% endif %}
+  </section>
+  <section class="webform-section">
+    <div class="container">
+      {% if page.webform_model %}
+        {{ page.webform_model }}
+      {% endif %}
+    </div>
+  </section>
+
+  {% include directory ~ '/partials/footer.twig' %}
+</div>

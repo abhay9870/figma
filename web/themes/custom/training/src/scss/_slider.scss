@@ -1,0 +1,154 @@
+.slider-section {
+  padding-top: 50px;
+  #block-heroslider > div.main-slider {
+    position: relative;
+  }
+  .main-slider {
+    position: relative;
+    .sl-num {
+      position: absolute;
+      bottom: 2px;
+      left: 11%;
+      @media screen and (max-width: (map-get($breakpoints, lg) - 1)) {
+        left: 8%;
+      }
+      @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+        left: 10%;
+        bottom: 0;
+      }
+      @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+        display: none;
+      }
+    }
+    .flex-direction-nav {
+      bottom: 2%;
+      left: 6%;
+      position: absolute;
+      @media screen and (max-width: (map-get($breakpoints, lg) - 1)) {
+        left: 2%;
+      }
+      @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+        bottom: 300px;
+        position: relative;
+      }
+      @media screen and (max-width: 375px) {
+        bottom: 260px;
+      }
+      a {
+        opacity: 1;
+        height: 40px;
+        &::before {
+          font-size: 23px;
+          @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+            font-size: 35px;
+          }
+        }
+        &::after {
+          font-size: 23px;
+          @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+            font-size: 35px;
+          }
+        }
+      }
+      .flex-prev {
+        left: 0px;
+        @media screen and (max-width: 425px) {
+          left: -20px;
+        }
+      }
+
+      .flex-next {
+        left: 140px;
+        @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+          left: inherit;
+          right: 20px;
+        }
+        @media screen and (max-width: 425px) {
+          left: inherit;
+          right: -3px;
+        }
+      }
+      // .flex-nav-prev {
+      //   @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+      //     position: absolute;
+      //     left: 10px;
+      //   }
+      // }
+      // .flex-nav-next {
+      //   @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+      //     position: absolute;
+      //     right: 10px;
+      //   }
+      // }
+    }
+    .sl-content {
+      padding-bottom: 20px;
+    }
+    .field--name-field-label {
+      font-weight: $fw7;
+      font-size: $f16;
+      line-height: $f24;
+      color: $maincolor;
+    }
+    .field--name-field-title {
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 72px;
+      letter-spacing: -0.02em;
+      color: $maincolor;
+      @media screen and (max-width: (map-get($breakpoints, lg) - 1)) {
+        font-size: 45px;
+        line-height: 50px;
+      }
+      @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+        font-size: 33px;
+        line-height: 38px;
+      }
+    }
+    .field--name-field-body {
+      padding: 20px 10px 20px 60px;
+      @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+        padding: 10px 10px 0px 20px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        color: #2f3941;
+        @media screen and (max-width: (map-get($breakpoints, lg) - 1)) {
+          font-size: 16px;
+          line-height: 30px;
+        }
+        @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    .field--name-field-details a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $maincolor;
+      padding-left: 60px;
+      @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &::after {
+        content: "\2192";
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        font-size: 30px;
+      }
+    }
+  }
+}
+#block-heroslider > div > ol > li > a {
+  text-decoration: none;
+}
+.flex-control-nav {
+  display: none;
+}

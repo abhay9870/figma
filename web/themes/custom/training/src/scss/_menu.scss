@@ -1,0 +1,96 @@
+/** Start Menu Section CSS  **/
+
+ul#superfish-main {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  ul {
+    li {
+      font-size: $f17;
+      font-family: "Space Grotesk";
+      a {
+        text-decoration: none;
+        color: $textcolor;
+        padding: 0 !important;
+      }
+      span {
+        text-decoration: none;
+        color: $textcolor;
+        padding: 0 !important;
+      }
+    }
+  }
+}
+ul.sf-menu a,
+ul.sf-menu span {
+  display: inline;
+  position: relative;
+  padding: 1em;
+  font-size: 18px;
+}
+ul.sf-menu .sf-sub-indicator {
+  right: 0px;
+  &:after {
+    content: "^";
+    transform: rotate(180deg);
+    top: 3px;
+    left: 12px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+ul.sf-menu .sf-expanded .sf-sub-indicator {
+  &:after {
+    transform: rotate(0deg);
+  }
+}
+.fixed-position {
+  position: fixed;
+}
+#main-menu-link-contentbc680507-2982-4de7-aa43-3c5a4abd5bfc .sf-depth-2 {
+  padding-top: 10px;
+  padding-left: 35px;
+}
+.main-nav {
+  #superfish-main-accordion {
+    .sf-clone-parent {
+      display: none;
+    }
+    .sf-has-clone-parent {
+      float: inherit !important;
+      background: lightslategrey;
+    }
+    li {
+      a {
+        @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+          color: $whitecolor;
+          padding: $f10 $f15;
+          font-size: 22px;
+        }
+      }
+      a.is-active {
+        @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+          color: #bf3654;
+        }
+      }
+      span {
+        @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+          color: $whitecolor;
+          padding: $f10 $f15;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+li#main-menu-link-contentbc680507-2982-4de7-aa43-3c5a4abd5bfc-accordion {
+  margin: 0 !important;
+}
+ul.sf-menu.sf-horizontal.sf-shadow ul {
+  box-shadow: none;
+  background-color: lightslategrey;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+
+/** END Menu Section CSS  **/

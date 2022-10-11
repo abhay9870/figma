@@ -1,0 +1,67 @@
+.main-header .header-top {
+  @include d-flex;
+  justify-content: space-between;
+  // position: relative;
+  padding: 10px 0 20px;
+  .site-logo {
+    display: flex;
+    align-items: flex-start;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      // background: url(../images/logo-icon.png) 0 0 no-repeat;
+      width: 30px;
+      height: 30px;
+    }
+    a {
+      @include d-flex;
+      text-decoration: none;
+      color: $ylwcolor;
+      font-size: $f25;
+      font-weight: $fw4;
+      font-family: "Space Grotesk";
+      text-transform: uppercase;
+      letter-spacing: 2pt;
+      img {
+        padding-right: 5px;
+      }
+    }
+  }
+  .main-nav {
+    @include d-flex;
+    @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
+      justify-content: start;
+    }
+    #block-training-mainnavigation #superfish-main-toggle {
+      width: 30px;
+      height: 30px;
+      margin: 8px 0px;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+      background: url("../images/menu.svg") no-repeat;
+      text-indent: -999999px;
+      display: block;
+    }
+  }
+  .search-sec {
+    @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+      display: none;
+    }
+    input#edit-keys {
+      width: 50px;
+      border-radius: 10px;
+      border: 1px solid grey;
+      text-align: center;
+      visibility: hidden;
+    }
+    input#edit-submit {
+      border: none;
+      background: white;
+      color: lightgrey;
+      &:hover {
+        color: $blackcolor;
+      }
+    }
+  }
+}

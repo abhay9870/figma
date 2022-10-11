@@ -1,0 +1,28 @@
+name: Training
+type: theme
+base theme: classy
+description: "This theme for Learning Purpose"
+package: Other
+core_version_requirement: ^8 || ^9
+libraries:
+  - training/global-styling
+
+regions:
+  branding: "Branding"
+  search: "Header Search"
+  main_menu: "Main Menu"
+  highlight: "Highlight"
+  slider: "Main Slider"
+  latest_updates: "Latest Updates"
+  digital_platform: "Digital Platform"
+  webform_model: "Webform Model"
+  content: "Content"
+  breadcrumb: "breadcrumb"
+  footer_top: "Footer Top"
+  footer_first: "Footer First"
+  footer_second: "Footer Second"
+  footer_third: "Footer Third"
+  footer_fourth: "Footer Fourth"
+  footer_fifth: "Footer Fifth"
+  footer_bottom_left: "Footer Bottom Left"
+  footer_bottom_right: "Footer Bottom Right"
