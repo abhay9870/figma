@@ -10,11 +10,7 @@
       bottom: 2px;
       left: 11%;
       @media screen and (max-width: (map-get($breakpoints, lg) - 1)) {
-        left: 8%;
-      }
-      @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
         left: 10%;
-        bottom: 0;
       }
       @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
         display: none;
@@ -25,7 +21,7 @@
       left: 6%;
       position: absolute;
       @media screen and (max-width: (map-get($breakpoints, lg) - 1)) {
-        left: 2%;
+        left: 4%;
       }
       @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
         bottom: 300px;
@@ -52,7 +48,7 @@
       }
       .flex-prev {
         left: 0px;
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
           left: -20px;
         }
       }
