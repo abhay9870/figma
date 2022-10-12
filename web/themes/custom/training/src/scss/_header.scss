@@ -45,23 +45,32 @@
     }
   }
   .search-sec {
+    position: relative;
     @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
       display: none;
     }
-    input#edit-keys {
-      width: 90px;
-      border-radius: 10px;
-      border: 1px solid grey;
-      text-align: center;
+    #search-block-form {
       visibility: hidden;
-    }
-    input#edit-submit {
-      border: none;
-      background: white;
-      color: lightgrey;
-      &:hover {
-        color: $blackcolor;
+      input#edit-keys {
+        width: 90px;
+        border-radius: 10px;
+        border: 1px solid grey;
+        text-align: center;
       }
+      input#edit-submit {
+        border: none;
+        background: white;
+        color: lightgrey;
+        visibility: hidden;
+        &:hover {
+          color: $blackcolor;
+        }
+      }
+    }
+    span {
+      position: absolute;
+      bottom: 5px;
+      right: 0;
     }
   }
 }

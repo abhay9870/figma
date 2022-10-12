@@ -12,6 +12,10 @@
       @media screen and (max-width: (map-get($breakpoints, lg) - 1)) {
         left: 10%;
       }
+      @media screen and (max-width: (map-get($breakpoints, md) - 1)) {
+        left: 12%;
+        bottom: 0px;
+      }
       @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
         display: none;
       }
@@ -64,18 +68,9 @@
           right: 13px;
         }
       }
-      // .flex-nav-prev {
-      //   @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
-      //     position: absolute;
-      //     left: 10px;
-      //   }
-      // }
-      // .flex-nav-next {
-      //   @media screen and (max-width: (map-get($breakpoints, sm) - 1)) {
-      //     position: absolute;
-      //     right: 10px;
-      //   }
-      // }
+    }
+    .sl-image > div > img {
+      width: 100%;
     }
     .sl-content {
       padding-bottom: 20px;
